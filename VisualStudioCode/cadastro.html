@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Pet Shop</title>
+    <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
+    <link rel="icon" type="image/icon" href="imagens/pata 2.png">
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <div id="logo">
+                <a href="home.html">
+                    <img id="Logo" src="imagens/Pata certa.png" alt="Logotipo do site">
+                </a>
+                <h3>Little Pet Shop</h3>
+            </div>
+            <div id="texto">
+                <a>A melhor opção para seu pet</a>
+            </div>
+        </div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="agendamentos.html">Agendamentos</a>
+            <a href="contato.html">Contato</a>
+            <a href="cadastro.html">Cadastre-se</a>
+        </nav>
+    </header>
+
+    <div id="login">
+        <h1>Cadastre-se</h1>
+        <div id="conteudo-login">
+            <div class="img-cadastro" id="login-img">
+                <img class="cachorro" src="imagens/cachorro_1-removebg-preview.png">
+            </div>
+            <div class="login-conteudo" id="cont-login">
+                <form id="formulario-login" action="#">
+                    <div id="login-container">
+                        <div id="cad-labels">
+                            <p><label for="frm-usuario">Usuário:</label></p>
+                            <p><label for="frm-email">E-mail:</label></p>
+                            <p><label for="frm-senha">Senha:</label></p>
+                            <p><label for="frm-confrm">Confirmar senha:</label></p>
+                        </div>
+                        <div id="cad-fields">
+                            <p><input name="frm-usuario" type="text" placeholder="Insira seu usuário" required></p>
+                            <p><input name="frm-email" type="email" placeholder="Insira seu e-mail" required></p>
+                            <p><input name="frm-senha" type="password" placeholder="Insira sua senha" required></p>
+                            <p><input name="frm-confrm" type="password" placeholder="Confirme sua senha" required></p>
+                        </div>
+                    </div>
+                    <div id="login-buttons">   
+                        <a id="botao-cadastrar" href="agendamentos.html">Cadastrar</a>  
+                    </div>
+                </form>
+            </div>
+            <div class="img-cadastro">
+                <img id="cachorro2" class="cachorro" src="imagens/cachorro_2-removebg-preview.png">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Siga a Little Pet Shop nas redes sociais</p>
+        <img id="img-footer" src="imagens/footer.png">
+    </footer>
+</body>
+</html>
