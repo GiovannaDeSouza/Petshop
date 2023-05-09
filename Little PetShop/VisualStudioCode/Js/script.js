@@ -87,6 +87,35 @@ function validarDados() {
         return false;
     }
         
+    //cidade
+    let cidade = document.getElementById('frm_cid').value
+    if (cidade.length < 3 || cidade.length > 50) {
+        erro.style.display = 'block';
+        erro.textContent = 'O nome da cidade está muito curto ou muito longo!';
+        formulario_login.frm_cid.focus();
+        campok = false;
+        return false;
+    }
+
+    //UF
+
+    //e-mail
+
+    //telefone
+
+    //nome do cachorro
+    let dog = document.getElementById('frm_name').value
+    if (dog.length < 3 || dog.length > 100) {
+        erro.style.display = 'block';
+        erro.textContent = 'O nome do pet está muito curto ou muito longo!';
+        formulario_login.frm_name.focus();
+        campok = false;
+        return false;
+    }
+
+    //tipo
+
+    //idade
     
 
 }

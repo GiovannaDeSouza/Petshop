@@ -6,7 +6,7 @@ body {
     border: 0;
     font-family: Roboto;
     color: rgb(0, 0, 0);
-    font-size: 18px; 
+    font-size: 18px;
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
@@ -45,7 +45,7 @@ header {
 
 header nav {
     align-self: center;
-    padding-bottom:10px;
+    padding-bottom: 10px;
     padding-right: 10px;
 }
 
@@ -53,7 +53,7 @@ nav :hover {
     color: #D9D9D9;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 22px;
@@ -208,7 +208,7 @@ nav a{
 }
 
 .box-img {
-    float:left;
+    float: left;
     width: 100%;
     text-align: left;
 }
@@ -250,7 +250,7 @@ footer {
 }
 
 #img-dog {
-    
+
     width: 375px;
     height: 450px;
     left: 80px;
@@ -296,7 +296,8 @@ footer {
     padding-left: 15px;
 }
 
-#frm-container select, input {
+#frm-container select,
+input {
     width: 200px;
     height: 42px;
     background-color: #D9D9D9;
@@ -353,7 +354,9 @@ button {
     padding-left: 15px;
 }
 
-#cont-container select, input, textarea {
+#cont-container select,
+input,
+textarea {
     width: 300px;
     height: 42px;
     background-color: #D9D9D9;
@@ -372,7 +375,11 @@ textarea {
     background-color: #00CCBE;
     color: white;
     border-radius: 10px;
-    margin: 35px 15px 35px 200px;
+    margin: 35px 15px 35px 120px;
+}
+
+#AindaC p {
+    margin-left: 90px;
 }
 
 #botao-apagar {
@@ -396,7 +403,8 @@ textarea {
     display: none;
     background-color: #00CCBE;
     border-radius: 100px;
-    
+    width: 500px;
+
 }
 
 #login {
@@ -406,6 +414,7 @@ textarea {
 #login h1 {
     text-align: center;
     color: #00CCBE;
+    margin-top: 54px;
 }
 
 #conteudo-login {
@@ -426,9 +435,11 @@ textarea {
 }
 
 #login-container {
-    padding: 50px 200px;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: center;
+    margin-left: 50px;
+
 }
 
 #login-labels {
@@ -453,7 +464,7 @@ textarea {
 
 #botao-enviar {
     opacity: 0.7;
-    font-size: 25px;    
+    font-size: 25px;
     text-align: center;
     background-color: #00CCBE;
     color: white;
@@ -461,6 +472,10 @@ textarea {
     text-decoration: none;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+#EsqS p {
+    margin-left: 150px;
 }
 
 #cadastre-se {
@@ -474,8 +489,9 @@ textarea {
 #img-cadastro {
     display: flex;
     flex-direction: row;
-    padding-left: 692px;
+    padding-left: 600px;
 }
+
 h3 {
     text-align: center;
 }
@@ -488,9 +504,6 @@ h3 {
     margin-left: 65px;
 }
 
-#login-container {
-    padding: 0px 200px;
-}
 
 .img-cadastro {
     width: 15%;
@@ -522,24 +535,27 @@ h3 {
     display: none;
     background-color: #00CCBE;
     border-radius: 100px;
-    
+
 }
 
 #cad-fields {
     padding-right: 150px;
     margin-left: 10px;
     font-size: 11px;
+    
 }
 
 #cad-labels {
     font-size: 22px;
     margin-right: 10px;
+    text-align: right;
+    flex-basis: min-content;
 }
 
 #cad-pets {
     display: flex;
     flex-direction: row;
-    padding-left: 160px;
+    padding-left: 96px;
     margin-bottom: 80px;
 }
 
@@ -556,7 +572,7 @@ h3 {
 
 #botao-cadastrar {
     opacity: 0.7;
-    font-size: 30px;    
+    font-size: 30px;
     text-align: center;
     padding: 10px 20px;
     background-color: #00CCBE;
@@ -566,10 +582,15 @@ h3 {
     text-decoration: none;
 }
 
+#login-buttons {
+    padding-right: 100px;
+    margin-top: 0;
+}
+
 @media(min-width: 768px) AND (max-width: 992px) {
     body {
         font-size: 20px;
-       background-color: #E4FFFA;
+        background-color: #E4FFFA;
     }
 
     header a {
@@ -590,27 +611,27 @@ h3 {
     #logo H3 {
         font-size: 16px;
     }
-    
+
     #Logo {
         width: 70px;
     }
 
     #img-inicial {
-       width: 240px;
+        width: 240px;
 
-        
+
     }
 
     #texto-container {
-       font-size: 25px;
-       padding: 30px 0px;
+        font-size: 25px;
+        padding: 30px 0px;
 
     }
 
     .serviços {
-       width: 100vw;
-       margin: 0;
-       padding: 0;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
     }
 
     .img-serviço img {
@@ -626,25 +647,26 @@ h3 {
     #img-nos {
         padding: 10px 0px;
     }
-    
+
     #destaques-depoimentos {
         flex-direction: column;
         align-items: center;
         margin: 50px 25px;
         background-color: white;
-        
+
     }
-    
+
     .box-depoimentos {
         margin-top: 45px;
         width: 90%;
     }
 
-    .box-depoimentos p, H4 {
+    .box-depoimentos p,
+    H4 {
         font-size: 25px;
         padding: 0px 5px;
     }
-    
+
     #box-depoimentos1 {
         width: 80%;
     }
@@ -652,7 +674,7 @@ h3 {
     #box-depoimentos2 {
         width: 80%;
     }
-    
+
     #box-depoimentos3 {
         width: 80%;
     }
@@ -661,7 +683,7 @@ h3 {
         width: 100%;
         height: 100%;
     }
-    
+
     #img-sobre {
         background-image: url(../imagens/Fundo.png);
         background-repeat: no-repeat;
@@ -691,13 +713,14 @@ h3 {
     #texto h1 {
         font-size: 30px;
     }
+
     #texto p {
         font-size: 13px;
     }
 
     #botao-agendar {
         margin: 0;
-    }   
+    }
 
     #formulario {
         background-color: #e4fffa;
@@ -734,10 +757,10 @@ h3 {
         padding: 0px 7px;
     }
 
-    #cont-fields{
+    #cont-fields {
         width: 0;
         padding-left: 0;
-        
+
     }
 
     #cont-container {
@@ -782,7 +805,7 @@ h3 {
         padding: 0;
         width: 20%;
     }
-    
+
     #cont-login {
         width: 100%;
         margin: 0 auto;
@@ -864,7 +887,7 @@ h3 {
         padding: 15px 0;
         font-size: 20px;
     }
-    
+
     #img-inicial {
         min-height: 300px;
         max-width: 95%;
@@ -975,7 +998,9 @@ h3 {
         width: 70%;
     }
 
-    #frm-fields p, #frm-fields input, #frm-fields select {
+    #frm-fields p,
+    #frm-fields input,
+    #frm-fields select {
         width: 95%;
     }
 
@@ -1000,7 +1025,7 @@ h3 {
 
     #cont-contato {
         width: 80%;
-        margin: 0 auto ;
+        margin: 0 auto;
     }
 
     #contato {
@@ -1018,7 +1043,9 @@ h3 {
         text-align: right;
     }
 
-    #cont-fields p, #cont-fields input, #cont-fields textarea {
+    #cont-fields p,
+    #cont-fields input,
+    #cont-fields textarea {
         width: 100%;
         height: 35px;
     }
@@ -1066,7 +1093,7 @@ h3 {
         padding: 0;
         width: 60%;
     }
-    
+
     #cont-login {
         width: 100%;
         margin: 0 auto;
@@ -1143,33 +1170,3 @@ h3 {
         text-align: center;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
