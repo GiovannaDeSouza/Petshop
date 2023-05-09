@@ -1,0 +1,1175 @@
+/* Home */
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Roboto;
+    color: rgb(0, 0, 0);
+    font-size: 18px; 
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+@font-face {
+    font-family: 'Joseph&Sophia';
+    src: url(../imagens/josephsophia.ttf) format('truetype');
+}
+
+header {
+    padding: 10px 20px 20px 20px;
+    height: 110px;
+    background-color: #09A6A3;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header h3 {
+    font-family: 'Joseph&Sophia';
+    font-size: 25px;
+    color: white;
+    margin-block: auto;
+    margin-right: 50px;
+}
+
+#logo {
+    display: flex;
+}
+
+#Logo {
+    width: 90px;
+}
+
+header nav {
+    align-self: center;
+    padding-bottom:10px;
+    padding-right: 10px;
+}
+
+nav :hover {
+    color: #D9D9D9;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    padding: 0 35px;
+    font-family: Roboto;
+}
+
+#container {
+    display: flex;
+    padding: 0 20px;
+    color: black;
+    background-color: #E4FFFA;
+}
+
+#img-inicial {
+    padding: 0 100px;
+}
+
+#texto-container {
+    color: #09A6A3;
+    font-size: 40px;
+    text-align: center;
+    padding: 30px 180px;
+}
+
+#agende-ja {
+    background-color: #09A6A3;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    margin: 40px auto 0 auto;
+    font-size: 30px;
+}
+
+#agende-ja :hover {
+    background-color: #00CCBE;
+}
+
+#nós {
+    display: flex;
+    margin: 30px;
+}
+
+#quem-somos {
+    color: black;
+    padding: 10px 100px;
+}
+
+#img-nos {
+    padding: 10px 100px;
+}
+
+.serviços {
+    padding: 0 100px;
+    text-align: center;
+    max-width: 1900px;
+    margin: 0;
+    background-color: #E4FFFA;
+}
+
+.serviços h2 {
+    color: #09A6A3;
+}
+
+.destaques-serviços {
+    display: flex;
+    margin: 60px 0;
+    justify-content: space-evenly;
+}
+
+.box-servico {
+    background-color: white;
+    background-color: #09A6A3;
+    width: 250px;
+}
+
+.box-servico img {
+    width: 180px;
+    height: 140px;
+    padding-top: 10px
+}
+
+.box-servico p {
+    color: white;
+    padding-bottom: 10px;
+}
+
+.box-servico h2 {
+    font-size: 25px;
+    color: white;
+}
+
+#depoimentos {
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    background-color: #09A6A3;
+}
+
+#destaques-depoimentos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+#box-depoimentos1 {
+    /* position: absolute; */
+    width: 280px;
+    height: 325px;
+    /* left: 52px; */
+    /* top: 2700px; */
+    background: #09A6A3;
+    border-radius: 30px;
+    text-align: center;
+}
+
+#box-depoimentos2 {
+    /* position: absolute; */
+    width: 280px;
+    height: 325px;
+    /* left: 513px; */
+    /* top: 2700px; */
+    background: #09A6A3;
+    border-radius: 30px;
+    text-align: center;
+}
+
+#box-depoimentos3 {
+    /* position: absolute; */
+    width: 280px;
+    height: 325px;
+    /* left: 974px; */
+    /* top: 2700px; */
+    background: #09A6A3;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.box-depoimentos {
+    margin: 0 85px;
+}
+
+.img-depoimento {
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    top: -45px
+}
+
+.box-img {
+    float:left;
+    width: 100%;
+    text-align: left;
+}
+
+footer {
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+    margin-top: auto;
+}
+
+#img-footer {
+    height: 50px;
+}
+
+/* Sobre */
+
+#sobre {
+    background-color: #E4FFFA;
+    display: flex;
+}
+
+#img-sobre {
+    margin: 25px;
+}
+
+#cont-sobre {
+    margin: 25px;
+    padding: 30px;
+    width: auto;
+}
+
+#img-fundo {
+    width: 500px;
+    height: 550px;
+    left: 31px;
+    top: 150px;
+    border-radius: 249.5px;
+}
+
+#img-dog {
+    
+    width: 375px;
+    height: 450px;
+    left: 80px;
+    top: 208px;
+}
+
+#cont-sobre p {
+    font-size: 170%;
+}
+
+/* Agendamento */
+
+#agendamento {
+    background-color: #E4FFFA;
+}
+
+#img-agendamento {
+    width: 100%;
+}
+
+#texto {
+    text-align: center;
+}
+
+#texto h1 {
+    color: #09A6A3;
+    font-size: 40px;
+}
+
+#frm-container {
+    display: flex;
+    justify-content: center;
+}
+
+#frm-labels {
+    text-align: right;
+    padding-right: 15px;
+    font-size: 28px;
+}
+
+#cont-fields {
+    text-align: center;
+    padding-left: 15px;
+}
+
+#frm-container select, input {
+    width: 200px;
+    height: 42px;
+    background-color: #D9D9D9;
+    font-family: Roboto;
+    font-size: 16px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 22px;
+    border: 0;
+}
+
+#botao-agendar {
+    background-color: #00CCBE;
+    color: white;
+    border-radius: 10px;
+    margin: 35px 625px;
+}
+
+/* contato */
+
+#contato {
+    background-color: #E4FFFA;
+}
+
+#contato h1 {
+    text-align: center;
+    color: #00CCBE;
+}
+
+#conteudo-cont {
+    display: flex;
+}
+
+#cont-container {
+    display: flex;
+    justify-content: center;
+}
+
+#cont-labels {
+    text-align: right;
+    padding-right: 15px;
+    font-size: 28px;
+}
+
+#cont-fields {
+    text-align: center;
+    padding-left: 15px;
+}
+
+#cont-container select, input, textarea {
+    width: 300px;
+    height: 42px;
+    background-color: #D9D9D9;
+    font-family: Roboto;
+    font-size: 16px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+#botao-enviar {
+    background-color: #00CCBE;
+    color: white;
+    border-radius: 10px;
+    margin: 35px 15px 35px 200px;
+}
+
+#botao-apagar {
+    background-color: #00CCBE;
+    color: white;
+    border-radius: 10px;
+    margin: 35px 0 35px 15px;
+}
+
+#cont-img {
+    width: 50%;
+}
+
+#cont-contato {
+    width: 50%;
+}
+
+/* login */
+
+#div-erro {
+    display: none;
+    background-color: #00CCBE;
+    border-radius: 100px;
+    
+}
+
+#login {
+    background-color: #E4FFFA;
+}
+
+#login h1 {
+    text-align: center;
+    color: #00CCBE;
+}
+
+#conteudo-login {
+    display: flex;
+}
+
+#login-img {
+    width: 37%;
+}
+
+#img-login {
+    width: 100%;
+    padding-top: 200px;
+}
+
+#cont-login {
+    width: 63%;
+}
+
+#login-container {
+    padding: 50px 200px;
+    display: flex;
+    justify-content: center;
+}
+
+#login-labels {
+    text-align: right;
+    padding-right: 15px;
+    font-size: 28px;
+}
+
+#login-fields {
+    text-align: center;
+    padding-left: 15px;
+}
+
+#formulario_login {
+    padding-right: 100px;
+    text-align: center;
+}
+
+#login-buttons {
+    padding-right: 180px;
+}
+
+#botao-enviar {
+    opacity: 0.7;
+    font-size: 25px;    
+    text-align: center;
+    background-color: #00CCBE;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#cadastre-se {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Cadastro */
+
+#img-cadastro {
+    display: flex;
+    flex-direction: row;
+    padding-left: 692px;
+}
+h3 {
+    text-align: center;
+}
+
+#login h1 {
+    margin-left: 50px;
+}
+
+#Ajuste h3 {
+    margin-left: 65px;
+}
+
+#login-container {
+    padding: 0px 200px;
+}
+
+.img-cadastro {
+    width: 15%;
+}
+
+.login-conteudo {
+    width: 70%;
+}
+
+.cachorro {
+    padding-top: 1250px;
+    width: 60%;
+}
+
+#cachorro2 {
+    padding-top: 1400px;
+    width: 100%;
+}
+
+#dog {
+    margin-right: 45px;
+}
+
+#h3D h3 {
+    margin-right: 50px;
+}
+
+#erro {
+    display: none;
+    background-color: #00CCBE;
+    border-radius: 100px;
+    
+}
+
+#cad-fields {
+    padding-right: 150px;
+    margin-left: 10px;
+    font-size: 11px;
+}
+
+#cad-labels {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+#cad-pets {
+    display: flex;
+    flex-direction: row;
+    padding-left: 160px;
+    margin-bottom: 80px;
+}
+
+#pet-fields {
+    padding-right: 150px;
+    margin-left: 10px;
+    font-size: 11px;
+}
+
+#pet-labels {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+#botao-cadastrar {
+    opacity: 0.7;
+    font-size: 30px;    
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #00CCBE;
+    color: white;
+    border-radius: 10px;
+    margin: 35px 0 35px 50px;
+    text-decoration: none;
+}
+
+@media(min-width: 768px) AND (max-width: 992px) {
+    body {
+        font-size: 20px;
+       background-color: #E4FFFA;
+    }
+
+    header a {
+        font-size: 15px;
+        padding: 3px;
+    }
+
+    #texto {
+        margin: 10px;
+        font-size: 15px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+
+    #logo H3 {
+        font-size: 16px;
+    }
+    
+    #Logo {
+        width: 70px;
+    }
+
+    #img-inicial {
+       width: 240px;
+
+        
+    }
+
+    #texto-container {
+       font-size: 25px;
+       padding: 30px 0px;
+
+    }
+
+    .serviços {
+       width: 100vw;
+       margin: 0;
+       padding: 0;
+    }
+
+    .img-serviço img {
+        width: 100%;
+    }
+
+    #nós {
+        background-color: white;
+        margin: 0px;
+        padding: 10px 10px;
+    }
+
+    #img-nos {
+        padding: 10px 0px;
+    }
+    
+    #destaques-depoimentos {
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 25px;
+        background-color: white;
+        
+    }
+    
+    .box-depoimentos {
+        margin-top: 45px;
+        width: 90%;
+    }
+
+    .box-depoimentos p, H4 {
+        font-size: 25px;
+        padding: 0px 5px;
+    }
+    
+    #box-depoimentos1 {
+        width: 80%;
+    }
+
+    #box-depoimentos2 {
+        width: 80%;
+    }
+    
+    #box-depoimentos3 {
+        width: 80%;
+    }
+
+    #sobre {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #img-sobre {
+        background-image: url(../imagens/Fundo.png);
+        background-repeat: no-repeat;
+        background-size: initial;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #img-fundo {
+        display: none;
+        width: 100%;
+
+    }
+
+    #img-dog {
+        width: 250px;
+        height: 250px;
+
+    }
+
+    #cont-sobre {
+        font-size: 12px;
+        width: 50%;
+    }
+
+    #texto h1 {
+        font-size: 30px;
+    }
+    #texto p {
+        font-size: 13px;
+    }
+
+    #botao-agendar {
+        margin: 0;
+    }   
+
+    #formulario {
+        background-color: #e4fffa;
+    }
+
+    #frm-fields {
+        text-align: left;
+    }
+
+    #frm-buttons {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #conteudo-cont {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0px 90px;
+    }
+
+    #cont-buttons {
+        display: flex;
+    }
+
+    #botao-enviar {
+        width: 50%;
+    }
+
+    #botao-apagar {
+        width: 50%;
+    }
+
+    #cont-labels {
+        padding: 0px 7px;
+    }
+
+    #cont-fields{
+        width: 0;
+        padding-left: 0;
+        
+    }
+
+    #cont-container {
+        justify-content: left;
+    }
+
+    #img-cont {
+        width: 550px;
+    }
+
+    #cont-img {
+        width: 230px;
+    }
+
+    #botao-enviar {
+        margin: 35px auto;
+    }
+
+    #botao-apagar {
+        margin: 35px 0 35px 15px;
+    }
+
+    #cont-buttons {
+        align-items: center;
+    }
+
+    #cont-contato {
+        width: 100%;
+    }
+
+    #conteudo-login {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #login-img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cachorro {
+        padding: 0;
+        width: 20%;
+    }
+    
+    #cont-login {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #cad-labels {
+        font-size: 26px;
+        padding-right: 15px;
+    }
+
+    #cad-fields {
+        padding: 0;
+    }
+
+    #cad-fields input {
+        width: 225px;
+        height: 38px;
+    }
+
+    #login-buttons {
+        padding: 0;
+    }
+
+    #botao-cadastrar {
+        align-items: center;
+    }
+
+    .img-cadastro {
+        width: 100%;
+        text-align: center;
+    }
+
+    #cachorro2 {
+        width: 30%;
+        padding: 0;
+    }
+
+    #conteudo-login {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #img-login {
+        width: 400px;
+        padding-top: 0;
+    }
+
+    #formulario-login {
+        padding: 0;
+    }
+
+    #login-container {
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 18px;
+    }
+
+    header {
+        flex-direction: column;
+        height: 400px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header nav {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0 auto 15px auto;
+    }
+
+    header nav a {
+        padding: 15px 0;
+        font-size: 20px;
+    }
+    
+    #img-inicial {
+        min-height: 300px;
+        max-width: 95%;
+        padding: 30px 5px;
+    }
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+    }
+
+    #texto-container {
+        font-size: 25px;
+        text-align: center;
+        width: 90%;
+        padding: 30px 0;
+    }
+
+    #imagem-servicos {
+        width: 100%;
+    }
+
+    #nós {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .serviços {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .box-servico {
+        margin-bottom: 30px;
+    }
+
+    #img-nos {
+        padding: 0 40px;
+        margin: 0;
+        text-align: center;
+    }
+
+    #img-servico {
+        width: 200px;
+    }
+
+    .destaques-serviços {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+
+    #depoimentos {
+        font-size: 22px;
+        width: 100%;
+    }
+
+    #destaques-depoimentos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-depoimentos {
+        margin-bottom: 50px;
+    }
+
+    #img-footer {
+        width: 350px;
+        height: 50px;
+    }
+
+    /* Sobre */
+
+    #sobre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #img-fundo {
+        width: 390px;
+    }
+
+    #img-dog {
+        width: 90%;
+        position: absolute;
+        left: 31px;
+        top: 500px;
+    }
+
+    /* Agendamentos */
+
+    #frm-labels {
+        width: 30%;
+        font-size: 26px;
+    }
+
+    #frm-fields {
+        width: 70%;
+    }
+
+    #frm-fields p, #frm-fields input, #frm-fields select {
+        width: 95%;
+    }
+
+    #frm-buttons {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    #botao-agendar {
+        margin: 35px auto;
+    }
+
+    /* Contato */
+
+    #conteudo-cont {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #cont-contato {
+        width: 80%;
+        margin: 0 auto ;
+    }
+
+    #contato {
+        width: 100%;
+    }
+
+    #cont-labels {
+        width: 30%;
+        font-size: 20px;
+        text-align: left;
+    }
+
+    #cont-fields {
+        width: 70%;
+        text-align: right;
+    }
+
+    #cont-fields p, #cont-fields input, #cont-fields textarea {
+        width: 100%;
+        height: 35px;
+    }
+
+    #cont-buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #botao-enviar {
+        margin: 35px auto;
+    }
+
+    #botao-apagar {
+        margin: 35px auto;
+    }
+
+    #cont-img {
+        width: 100%;
+    }
+
+    #img-cont {
+        width: 100%;
+    }
+
+    /* Cadastro */
+
+    #conteudo-login {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #login-container {
+        padding: 50px 0;
+    }
+
+    #login-img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cachorro {
+        padding: 0;
+        width: 60%;
+    }
+    
+    #cont-login {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #cad-labels {
+        font-size: 26px;
+        padding-right: 15px;
+    }
+
+    #cad-fields {
+        padding: 0;
+    }
+
+    #cad-fields input {
+        width: 225px;
+        height: 38px;
+    }
+
+    #login-buttons {
+        padding: 0;
+    }
+
+    #botao-cadastrar {
+        margin: 35px auto;
+    }
+
+    .img-cadastro {
+        width: 100%;
+        text-align: center;
+    }
+
+    #cachorro2 {
+        width: 60%;
+        padding: 0;
+    }
+
+    /* Login */
+
+    #conteudo-login {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #login-img {
+        width: 100%;
+    }
+
+    #img-login {
+        width: 75%;
+        padding: 0;
+    }
+
+    #login-labels {
+        font-size: 20px;
+        padding-right: 15px;
+    }
+
+    #login-fields {
+        padding: 0;
+    }
+
+    #login-fields input {
+        width: 225px;
+        height: 36px;
+    }
+
+    #formulario-login {
+        padding: 0;
+        align-items: center;
+    }
+
+    .senha {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
