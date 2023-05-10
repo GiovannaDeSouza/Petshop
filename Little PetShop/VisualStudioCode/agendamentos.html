@@ -27,6 +27,7 @@
             <a href="agendamentos.html">Agendamentos</a>
             <a href="contato.html">Contato</a>
             <a href="cadastro.html">Cadastre-se</a>
+            <a href="Dashbord.html">Dashbord</a>
         </nav>
     </header>
 
@@ -38,13 +39,18 @@
         </div>
         <form id="formulario" action="#">
             <div id="frm-container">
+                <div id="erro">...</div>
                 <div id="frm-labels">
+                    <p><label id="frm-nome" for="frm-nome">Nome do cliente:</label></p>
+                    <p><label id="frm-pet" for="frm-pet">Nome do Pet:</label></p>
                     <p><label for="frm-servico">Serviço:</label></p>
                     <p><label for="frm-data">Data:</label></p>
                     <p><label for="frm-hora">Hora:</label></p>
                     <p><label for="frm-pagamento">Modo de pagamento:</label></p>
                 </div>
                 <div id="frm-fields">
+                    <p><input name="frm-nome" type="text" placeholder="Insira seu nome" required></p>
+                    <p><input name="frm-pet" type="text" placeholder="Insira o nome do Pet" required></p>
                     <p>
                         <select name="frm-servico">
                             <option value="servico">Banho</option>
@@ -69,9 +75,49 @@
                 </div>
             </div>
             <div id="frm-buttons">
-                <button id="botao-agendar" type="submit" formaction="#">Agendar</button>
+                <button onclick="validarAgendamento()" id="botao-agendar" type="submit" formaction="#">Agendar</button>
             </div>
         </form>
+    </div>
+    <div id="dados-agendamento">
+        <div id="img-agendamento1"><img id="dog-agendamento" src="imagens/agendamento1.png"></div>
+        <div id="tabela-agendamento">
+            <table>
+                <thead>
+                    <tr> 
+                        <td>
+                            Nome do cliente
+                        </td>
+                        <td>
+                            Nome do cliente
+                        </td>
+                        <td>
+                            Nome do cliente
+                        </td>
+                        <td>
+                            Nome do cliente
+                        </td>
+                        <td>
+                            Nome do cliente
+                        </td>
+                        <td>
+                            Nome do cliente
+                        </td>
+                    </tr>
+
+                </thead>
+                <tbody id="linhas">
+                    <tr></tr>
+                </tbody>
+                <!-- <tr><td>Nome do cliente</td></tr>
+                <tr><td>Nome do Pet</td></tr>
+                <tr><td>Serviço</td></tr>
+                <tr><td>Data</td></tr>
+                <tr><td>Hora</td></tr>
+                <tr><td>Forma de pagamento</td></tr> -->
+            </table>
+        </div>
+        <div id="img-agendamento2"><img id="dog-agendamento1" src="imagens/sumeet-shinde-Z8ZsQBJR_7c-unsplash-removebg-preview.png"></div>
     </div>
 
     <footer>

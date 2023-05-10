@@ -61,7 +61,7 @@
                             <p><label for="frm_cid">Cidade:</label></p>
                             <p><label for="frm_sigla">UF:</label></p>
                             <p><label for="frm_senha">Senha de Acesso:</label></p>
-                          
+
                         </div>
                         <div id="cad-fields">
                             <p><input id="frm_id" name="frm-id" type="text" placeholder="Gere seu ID"></p>
@@ -73,7 +73,7 @@
                             <p><input id="frm_cid" name="frm_cid" type="text" placeholder="Insira sua cidade"></p>
                             <p><input id="frm_sigla" name="frm_sigla" type="text" placeholder="Insira seu Estado"></p>
                             <p><input id="frm_senha" name="frm_senha" type="password" placeholder="Crie uma senha"></p>
-                            
+
                         </div>
                     </div>
                     <div id="dog"><img src="imagens/dog-cadastro.png"></div>
@@ -82,19 +82,38 @@
                     </div>
                     <div id="cad-pets">
                         <div id="pet-labels">
-                            <p><label id="frm_name" for="frm_name">Nome:</label></p>
-                            <p><label id="frm_idade" for="frm_idade">Idade:</label></p>
-                            <p><label id="frm_raca" for="frm_raca">Tipo:</label></p>
+                            <p><label for="frm_name">Nome:</label></p>
+                            <p><label for="frm_raca">Tipo:</label></p>
+                            <p><label  id="frm_outros" for="frm_outros">Outros:</label></p>
+                            <p><label for="frm_idade">Idade:</label></p>
+
                         </div>
                         <div id="pet-fields">
-                            <p><input name="frm-name" type="text" placeholder="Insira o nome do seu Pet" ></p>
-                            <p><input name="frm-idade" type="number" placeholder="Insira a idade do seu Pet" >
+                            <p><input id="frm_name" name="frm_name" type="text" placeholder="Insira o nome do seu Pet">
                             </p>
-                            <p><input name="frm-raca" type="text" placeholder="Insira o tipo do seu Pet" ></p>
+                            <p>
+                                <select id="frm_raca" onchange="outros10();">
+                                    <option value="cachorro">Cachorro</option>
+                                    <option value="gato">Gato</option>
+                                    <option value="aves">Aves</option>
+                                    <option id="outros1" value="outros">Outros</option>
+                                </select>
+                            </p>
+
+                            
+                            <input id="outros" type="text" placeholder="Digite o nome do animal">
+
+                            
+                            <input id="frm_idade1" type="text" placeholder="Anos">
+                            <input id="frm_idade2" type="text" placeholder="Meses">
+                            <input id="frm_idade3" type="text" placeholder="Dias">
+                            <p><input id="frm_idadeF" name="frm_idadeF" type="text"></p>
+                            <p id="IdadeT"></p>
                         </div>
                     </div>
                     <div id="login-buttons">
-                        <button id="botao-cadastrar" type="button" href="agendamentos.html" onclick="validarDados()">Cadastrar</button>
+                        <button id="botao-cadastrar" type="button" href="agendamentos.html"
+                            onclick="validarDados()">Cadastrar</button>
                     </div>
                 </form>
             </div>
@@ -110,4 +129,5 @@
     </footer>
 </body>
 <script src="Js/script.js" type="text/javascript"></script>
+
 </html>
