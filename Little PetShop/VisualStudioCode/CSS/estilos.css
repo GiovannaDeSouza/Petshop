@@ -339,15 +339,18 @@ button {
     width: 400px;
 }
 
-#tabela-agendamento {
-    width: 48%;
-    margin-top: 100px;
+#tabela_agendamento {
+    width: 500px;
+    margin: 35px  104.2px;
+    align-items: center;
+    margin-top: 35px;
+
 }
 
-table {
+#tabelinha {
     background-color: #D9D9D9;
     border-radius: 5px;
-    width: 100px;
+    width: 600px;
 }
 
 td {
@@ -358,6 +361,13 @@ td {
     width: 25%;
     margin-left: 20px;
     text-align: end;
+}
+
+#erro {
+    display: none;
+    background-color: #00CCBE;
+    border-radius: 100px;
+    text-align: center;
 }
 
 #dog-agendamento1 {
@@ -583,7 +593,7 @@ h3 {
     padding-right: 150px;
     margin-left: 10px;
     font-size: 11px;
-    
+
 }
 
 #cad-labels {

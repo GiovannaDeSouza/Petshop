@@ -27,6 +27,7 @@
             <a href="agendamentos.html">Agendamentos</a>
             <a href="contato.html">Contato</a>
             <a href="cadastro.html">Cadastre-se</a>
+            <a href="login.html">Login</a>
             <a href="Dashbord.html">Dashbord</a>
         </nav>
     </header>
@@ -44,14 +45,15 @@
                             <p><label for="frm-mensagem">Sua mensagem:</label></p>
                         </div>
                         <div id="cont-fields">
-                            <p><input name="frm-nome" type="text" placeholder="Digite seu nome" required></p>
-                            <p><input name="frm-email" type="email" placeholder="nome@e-mail.com" required></p>
-                            <p><input name="frm-telefone" type="tel" placeholder="(00) 00000-0000" required></p>
-                            <p><textarea name="frm-mensagem" rows="10" placeholder="Digite aqui sua mensagem"></textarea></p>
+                            <p><input id="frm_nome" name="frm_nome" type="text" placeholder="Digite seu nome" required></p>
+                            <p><input id="frm_email" name="frm_email" type="email" placeholder="nome@e-mail.com" required></p>
+                            <p><input id="frm_telefone" name="frm_telefone" type="tel" placeholder="(00) 00000-0000" required></p>
+                            <p><textarea id="frm_mensagem" name="frm_mensagem" rows="10" placeholder="Digite aqui sua mensagem"></textarea></p>
                         </div>
                     </div>
+                    <div id="erro">...</div>
                     <div id="cont-buttons">
-                        <button id="botao-enviar" type="submit" formaction="#">Enviar</button>
+                        <button  onclick="validarContato()" id="botao-enviar" type="button" >Enviar</button>
                         <button id="botao-apagar" type="reset">Apagar</button>
                     </div>
                 </form>
@@ -67,4 +69,5 @@
         <img id="img-footer" src="imagens/footer.png">
     </footer>
 </body>
+<script src="Js/contato.js" type="text/javascript"></script>
 </html>

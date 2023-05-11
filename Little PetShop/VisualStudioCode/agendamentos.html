@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,97 +28,85 @@
             <a href="agendamentos.html">Agendamentos</a>
             <a href="contato.html">Contato</a>
             <a href="cadastro.html">Cadastre-se</a>
+            <a href="login.html">Login</a>
             <a href="Dashbord.html">Dashbord</a>
         </nav>
     </header>
 
     <div id="agendamento">
-        
+
         <div id="texto">
             <h1>Venha nos visitar</h1>
             <p>Marque um horário</p>
         </div>
         <form id="formulario" action="#">
             <div id="frm-container">
-                <div id="erro">...</div>
+
                 <div id="frm-labels">
-                    <p><label id="frm-nome" for="frm-nome">Nome do cliente:</label></p>
-                    <p><label id="frm-pet" for="frm-pet">Nome do Pet:</label></p>
-                    <p><label for="frm-servico">Serviço:</label></p>
-                    <p><label for="frm-data">Data:</label></p>
-                    <p><label for="frm-hora">Hora:</label></p>
-                    <p><label for="frm-pagamento">Modo de pagamento:</label></p>
+
+                    <p><label for="frm-nome">Nome do cliente:</label></p>
+                    <p><label for="frm-pet">Nome do Pet:</label></p>
+                    <p><label for="frm_servico">Serviço:</label></p>
+                    <p><label for="frm_data">Data:</label></p>
+                    <p><label for="frm_hora">Hora:</label></p>
+                    <p><label for="frm_pagamento">Modo de pagamento:</label></p>
                 </div>
                 <div id="frm-fields">
-                    <p><input name="frm-nome" type="text" placeholder="Insira seu nome" required></p>
-                    <p><input name="frm-pet" type="text" placeholder="Insira o nome do Pet" required></p>
+                    <p><input id="frm_nome" name="frm_nome" type="text" placeholder="Insira seu nome"></p>
+                    <p><input id="frm_pet" name="frm_pet" type="text" placeholder="Insira o nome do Pet"></p>
                     <p>
-                        <select name="frm-servico">
-                            <option value="servico">Banho</option>
-                            <option value="data">Tosa</option>
-                            <option value="hora">Adestramento</option>
-                            <option value="outros">Passeio</option>
-                            <option value="hora">Veterinário</option>
-                            <option value="outros">Pet Sitter</option>
+                        <select id="frm_servico" name="frm_servico">
+                            <option value="Banho">Banho</option>
+                            <option value="Tosa">Tosa</option>
+                            <option value="Adestramento">Adestramento</option>
+                            <option value="Passeio">Passeio</option>
+                            <option value="Veterinário">Veterinário</option>
+                            <option value="Pet Sitter">Pet Sitter</option>
                         </select>
                     </p>
-                    <p><input name="frm-data" type="date" placeholder="dd/mm/aaaa" required></p>
-                    <p><input name="frm-hora" type="time" placeholder="00:00" required></p>
+                    <p><input id="frm_data" name="frm_data" type="date" placeholder="dd/mm/aaaa"></p>
+                    <p><input id="frm_hora" name="frm_hora" type="time" placeholder="00:00"></p>
                     <p>
-                        <select name="frm-pagamento">
-                            <option value="servico">Pix</option>
-                            <option value="data">Crédito</option>
-                            <option value="hora">Débito</option>
-                            <option value="outros">Boleto</option>
-                            <option value="hora">Dinheiro</option>
+                        <select id="frm_pagamento" name="frm_pagamento">
+                            <option value="Pix">Pix</option>
+                            <option value="Crédito">Crédito</option>
+                            <option value="Débito">Débito</option>
+                            <option value="Boleto">Boleto</option>
+                            <option value="Dinheiro">Dinheiro</option>
                         </select>
                     </p>
                 </div>
             </div>
+            <div id="erro">...........</div>
             <div id="frm-buttons">
-                <button onclick="validarAgendamento()" id="botao-agendar" type="submit" formaction="#">Agendar</button>
+                <button type="button" onclick="validarAgendamento()" id="botao-agendar">Agendar</button>
             </div>
         </form>
     </div>
     <div id="dados-agendamento">
-        <div id="img-agendamento1"><img id="dog-agendamento" src="imagens/agendamento1.png"></div>
-        <div id="tabela-agendamento">
-            <table>
+        <div id="img-agendamento1">
+            <img id="dog-agendamento" src="imagens/agendamento1.png">
+        </div>
+        <div id="tabela_agendamento">
+            <table id="tabelinha">
                 <thead>
-                    <tr> 
-                        <td>
-                            Nome do cliente
-                        </td>
-                        <td>
-                            Nome do cliente
-                        </td>
-                        <td>
-                            Nome do cliente
-                        </td>
-                        <td>
-                            Nome do cliente
-                        </td>
-                        <td>
-                            Nome do cliente
-                        </td>
-                        <td>
-                            Nome do cliente
-                        </td>
+                    <tr>
+                        <td>Nome do cliente</td>
+                        <td>Nome do Pet</td>
+                        <td>Serviço</td>
+                        <td>Data</td>
+                        <td> Hora</td>
+                        <td>Forma de pagamento</td>
                     </tr>
 
                 </thead>
                 <tbody id="linhas">
                     <tr></tr>
                 </tbody>
-                <!-- <tr><td>Nome do cliente</td></tr>
-                <tr><td>Nome do Pet</td></tr>
-                <tr><td>Serviço</td></tr>
-                <tr><td>Data</td></tr>
-                <tr><td>Hora</td></tr>
-                <tr><td>Forma de pagamento</td></tr> -->
             </table>
         </div>
-        <div id="img-agendamento2"><img id="dog-agendamento1" src="imagens/sumeet-shinde-Z8ZsQBJR_7c-unsplash-removebg-preview.png"></div>
+        <div id="img-agendamento2"><img id="dog-agendamento1"
+                src="imagens/sumeet-shinde-Z8ZsQBJR_7c-unsplash-removebg-preview.png"></div>
     </div>
 
     <footer>
@@ -125,4 +114,7 @@
         <img id="img-footer" src="imagens/footer.png">
     </footer>
 </body>
+
+<script src="Js/agendamento.js" type="text/javascript"></script>
+
 </html>
