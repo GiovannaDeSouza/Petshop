@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Pet Shop</title>
+    <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
+    <link rel="icon" type="image/icon" href="imagens/pata 2.png">
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <div id="logo">
+                <a href="home.html">
+                    <img id="Logo" src="imagens/Pata certa.png" alt="Logotipo do site">
+                </a>
+                <h3>Little Pet Shop</h3>
+            </div>
+            <div id="texto">
+                <a>A melhor opção para seu pet</a>
+            </div>
+        </div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="agendamentos.html">Agendamentos</a>
+            <a href="contato.html">Contato</a>
+            <a href="cadastro.html">Cadastre-se</a>
+            <a href="login.html">Login</a>
+            <a href="Dashbord.html">Dashbord</a>
+        </nav>
+    </header>
+
+    <div id="agendamento">
+
+        <div id="texto">
+            <h1>Venha nos visitar</h1>
+            <p>Marque um horário</p>
+        </div>
+        <form id="formulario" action="#">
+            <div id="frm-container">
+
+                <div id="frm-labels">
+
+                    <p><label for="frm-nome">Nome do cliente:</label></p>
+                    <p><label for="frm-pet">Nome do Pet:</label></p>
+                    <p><label for="frm_servico">Serviço:</label></p>
+                    <p><label for="frm_data">Data:</label></p>
+                    <p><label for="frm_hora">Hora:</label></p>
+                    <p><label for="frm_pagamento">Modo de pagamento:</label></p>
+                </div>
+                <div id="frm-fields">
+                    <p><input id="frm_nome" name="frm_nome" type="text" placeholder="Insira seu nome"></p>
+                    <p><input id="frm_pet" name="frm_pet" type="text" placeholder="Insira o nome do Pet"></p>
+                    <p>
+                        <select id="frm_servico" name="frm_servico">
+                            <option value="Banho">Banho</option>
+                            <option value="Tosa">Tosa</option>
+                            <option value="Adestramento">Adestramento</option>
+                            <option value="Passeio">Passeio</option>
+                            <option value="Veterinário">Veterinário</option>
+                            <option value="Pet Sitter">Pet Sitter</option>
+                        </select>
+                    </p>
+                    <p><input id="frm_data" name="frm_data" type="date" placeholder="dd/mm/aaaa"></p>
+                    <p><input id="frm_hora" name="frm_hora" type="time" placeholder="00:00"></p>
+                    <p>
+                        <select id="frm_pagamento" name="frm_pagamento">
+                            <option value="Pix">Pix</option>
+                            <option value="Crédito">Crédito</option>
+                            <option value="Débito">Débito</option>
+                            <option value="Boleto">Boleto</option>
+                            <option value="Dinheiro">Dinheiro</option>
+                        </select>
+                    </p>
+                </div>
+            </div>
+            <div id="erro">...........</div>
+            <div id="frm-buttons">
+                <button type="button" onclick="validarAgendamento()" id="botao-agendar">Agendar</button>
+            </div>
+        </form>
+    </div>
+    <div id="dados-agendamento">
+        <div id="img-agendamento1">
+            <img id="dog-agendamento" src="imagens/agendamento1.png">
+        </div>
+        <div id="tabela_agendamento">
+            <table id="tabelinha">
+                <thead>
+                    <tr>
+                        <td>Nome do cliente</td>
+                        <td>Nome do Pet</td>
+                        <td>Serviço</td>
+                        <td>Data</td>
+                        <td> Hora</td>
+                        <td>Forma de pagamento</td>
+                    </tr>
+
+                </thead>
+                <tbody id="linhas">
+                    <tr></tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="img-agendamento2"><img id="dog-agendamento1"
+                src="imagens/sumeet-shinde-Z8ZsQBJR_7c-unsplash-removebg-preview.png"></div>
+    </div>
+
+    <footer>
+        <p>Siga a Little Pet Shop nas redes sociais</p>
+        <img id="img-footer" src="imagens/footer.png">
+    </footer>
+</body>
+
+<script src="Js/agendamento.js" type="text/javascript"></script>
+
+</html>
